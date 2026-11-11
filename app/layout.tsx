@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import {LanguageProvider} from '@/components/LanguageProvider';import Header from '@/components/Header';import Footer from '@/components/Footer';
+export const metadata:Metadata={title:'Nellai Kannan Digital Archive | நெல்லை கண்ணன் டிஜிட்டல் காப்பகம்',description:'A bilingual digital archive preserving the life, literary contributions, books, interviews and public memory of Nellai Kannan.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><LanguageProvider><Header/>{children}<Footer/></LanguageProvider></body></html>}
